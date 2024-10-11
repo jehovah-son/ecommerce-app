@@ -20,13 +20,13 @@ class _CartItemState extends State<CartItem> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.brown[200],borderRadius: BorderRadius.circular(10)),
-      margin: EdgeInsets.only(bottom: 15),
-      padding: EdgeInsets.all(10),
+      margin: const EdgeInsets.only(bottom: 15),
+      padding: const EdgeInsets.all(10),
       child: ListTile(
         leading: Image.asset(widget.phones.imagesPath),
         title: Text(widget.phones.name),
         subtitle: Text(widget.phones.price),
-        trailing: IconButton(onPressed: removeItemFromCart , icon: Icon(Icons.delete)),
+        trailing: IconButton(onPressed: removeItemFromCart , icon: const Icon(Icons.delete)),
       ),
     );
   }

@@ -46,7 +46,7 @@ class PhoneTile extends StatelessWidget {
                   children: [
                     Text(phones.name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
                     SizedBox(height: 5,),
-                    Text('\#${phones.price}', style: TextStyle(color: Colors.grey[700]),),
+                    Text('#${phones.price}', style: TextStyle(color: Colors.grey[700]),),
                   ],
                 ),
                 GestureDetector(
